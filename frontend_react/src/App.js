@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+
+import { About, Footer, Header, Skills, Testimonial, Work } from './container';
 
 const App = () => {
-  return (
-    <h1>
-      Hello world
-    </h1>
+  return(
+    <div>App
+    </div>
   )
-}
+  };
 
-export default App
+export default App;
