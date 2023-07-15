@@ -1,27 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
-import { images } from '../../constants';
-import { urlFor, client } from '../../client';
 import './About.scss';
 
 const abouts = [
-  {title: "Web Developer", description:"I am a good Web Developer", imgUrl: images.about01},
-  {title: "Web Developer", description:"I am a good Web Developer", imgUrl: images.about02},
-  {title: "Web Developer", description:"I am a good Web Developer", imgUrl: images.about03},
-  {title: "Web Developer", description:"I am a good Web Developer", imgUrl: images.about04},
+  {title: 'Web Developer', description: 'I am a good Web Developer', imgUrl: ''},
+  {title: 'Web Developer', description: 'I am a good Web Developer', imgUrl: ''},
+  {title: 'Web Developer', description: 'I am a good Web Developer', imgUrl: ''},
+  {title: 'Web Developer', description: 'I am a good Web Developer', imgUrl: ''},
 ]
 
 const About = () => {
-  const [abouts, setAbouts] = useState([]);
 
-  useEffect(() => {
-    const query = '*[_type == "abouts"]';
-
-    client.fetch(query).then((data) => {
-      setAbouts(data);
-    });
-  }, []);
   return (
     <>
       <h2 className="head-text">I Know that <span>Good Design</span> <br />means  <span>Good Business</span></h2>
